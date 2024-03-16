@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .message-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .message p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="message-container">
+        <h2>Messages</h2>
+        <% if (MSG.length === 0) { %>
+            <p>No messages found.</p>
+
+        <% } else { %> 
+            <% let k ;  }%>
+            <% for(  k  = 0 ; k < MSG.length ;k++ ) {%>
+                <div class="message">
+                    <p><strong>Sender: <%= MSG[k].name %></strong></p>
+                    <p><%= MSG[k].msg %></p>
+                </div>
+
+
+            <% } %>
+         
+    </div>
+</body>
+</html>
