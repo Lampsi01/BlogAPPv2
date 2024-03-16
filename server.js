@@ -14,7 +14,7 @@ let port = 4000 ;
 // let nom ;  
 
 app.use(session({
-    secret: "123456", // Change this to a secret key for session encryption
+    secret: "123456",  
     resave: false,
     saveUninitialized: true
 }));
